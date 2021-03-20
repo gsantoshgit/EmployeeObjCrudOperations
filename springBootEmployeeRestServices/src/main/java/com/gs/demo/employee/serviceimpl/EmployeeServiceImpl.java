@@ -1,8 +1,18 @@
-/*
- * Copyright 2020-2021 the original author or authors.
- * This class is used to implement all the crud operations of employee service
- */
-
+/**
+ *   Copyright 2021 by G Santosh Chary All Rights Reserved.
+ *
+ *        @filename         : EmployeeServiceImpl.java
+ *        @version          : 1.0.0
+ *        @date             : March 20, 2021
+ *        @description		: This class is used to do all crud operation on employee object
+ *
+ *        @author <a href="mailto:santoshchary.gadepally@gmail.com">Santosh Chary Gadepally/a>
+ *
+ * History of modifications:
+ * Author                            Date                Description of modifications
+ * ------------                  ------------         ------------------------------
+ * Santosh Chary Gadepally   		March 20, 2021            Created.
+ **/
 package com.gs.demo.employee.serviceimpl;
 
 import java.util.List;
@@ -18,12 +28,7 @@ import com.gs.demo.employee.repository.EmployeeRepository;
 import com.gs.demo.employee.services.EmployeeService;
 
  
-/**
- * @author Santosh Chary Gadepally
- * @since 03/20/2021
- * @version 1.0.0
- *
- */
+
 @Service
 public class EmployeeServiceImpl implements EmployeeService{
  
@@ -37,6 +42,7 @@ public class EmployeeServiceImpl implements EmployeeService{
  
  /**
 * @param employeeRepository 
+* This method is used to set the Repository 
 */
  
  public void setEmployeeRepository(EmployeeRepository employeeRepository) {
@@ -45,7 +51,7 @@ public class EmployeeServiceImpl implements EmployeeService{
   log.info("Exit");
  }
  /**
-* This method is to retrieve the List of employees
+* This API method is to retrieve the List of employees
 */ 
  public List<Employee> retrieveEmployees() {
 	 String METHOD_NAME="retrieveEmployees :";
@@ -56,7 +62,7 @@ public class EmployeeServiceImpl implements EmployeeService{
  }
  
  /**
-* This method is to getEmployee based on provided id
+* This API method is to the getEmployee based on provided id
 * @param employeeId
 */ 
  public Employee getEmployee(Long employeeId) throws EmployeeObjExecptions{
