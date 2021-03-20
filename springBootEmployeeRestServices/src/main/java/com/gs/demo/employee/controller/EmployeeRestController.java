@@ -1,3 +1,19 @@
+/**
+ *   Copyright 2021 by G Santosh Chary All Rights Reserved.
+ *
+ *        @filename         : EmployeeRestController.java
+ *        @version          : 1.0.0
+ *        @date             : March 20, 2021
+ *        @description		: This Controller class is used to do the get,put,post request mappings
+ *
+ *        @author <a href="mailto:santoshchary.gadepally@gmail.com">Santosh Chary Gadepally/a>
+ *
+ * History of modifications:
+ * Author                            Date                Description of modifications
+ * ------------                  ------------         ------------------------------
+ * Santosh Chary Gadepally   		March 20, 2021            Created.
+ **/
+
 package com.gs.demo.employee.controller;
 
 import java.util.List;
@@ -18,14 +34,6 @@ import com.gs.demo.employee.exceptions.EmployeeObjExecptions;
 import com.gs.demo.employee.serviceimpl.EmployeeServiceImpl;
 import com.gs.demo.employee.services.EmployeeService;
 
-/**
- * This class main use to rest calls for employee crud operations
- * 
- * @author Santosh Chary Gadepally
- * @version 1.0.0
- * 
- *
- */
 @RestController
 public class EmployeeRestController {
   
